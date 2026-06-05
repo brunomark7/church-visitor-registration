@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luz da Vida | Floripa</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+
+    <img src="logo ldv.png" class="logo">
+
+    <h2 class="titulo">Bem-vindo(a) ao melhor Lugar do Planeta!</h2>
+
+    <p class="texto">
+        <p>É um prazer receber você em nossa igreja!</p>
+        <br><br>
+        Por favor, preencha o formulário abaixo com suas informações.
+        Assim, podemos entrar em contato e manter você informado(a)
+        sobre nossas atividades e eventos especiais.</p><br>
+
+    <p class="versiculo">
+        "Pois onde se acham dois ou três reunidos em meu nome,
+        aí estou eu no meio deles" Mt 18:20</p>
+
+    <button class="btn" id="btn" onclick="abrirpopup()">Preencher Formulário</button>
+    <div id="popupon" style="display: none;">
+        <div id="cabecalho-popup">
+            <h4>Preencha os campos abaixo e clique em 'Enviar' para concluir seu cadastro. </h4>
+            <input type="button" id="fpop" value="X" onclick="fecharpopup()">
+        </div>
+        <form id="formvisitante">
+            <div class="corpo-popup">
+                    <input type="text" class="formu" id="inptnome" placeholder="Nome"><br>
+                    <input type="tel" class="formu" name="telefone" id="telefone" placeholder="Telefone/Wpp com DDD" maxlength="11"><br>
+                    <input type="text" class="formu" name=" cidade/bairro" id="bairro" placeholder="Cidade / Bairro"><br>
+                    <select name="dropdown" class="formu" id="qualculto">
+                        <option selected disabled>Em qual Culto Está?</option>
+                        <option>Sábado</option>
+                        <option>Domingo</option>
+                        <option>Quinta</option>
+                    </select><br>
+                    <select name="dropdown" class="formu" id="comoconheceu">
+                        <option selected disabled>Como nos Conheceu?</option>
+                        <option>Indicação</option>
+                        <option>Amigos</option>
+                        <option>Redes Sociais</option>
+                        <option>Outros</option>
+                    </select>
+            </div>
+        </form>    
+    </div>
+    <div id="overlay" style="display: none;" onclick="fecharpopup()"></div>
+<script src="scriptigreja.js"></script>
+</div>
+</body>
+</html>
