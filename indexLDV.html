@@ -37,9 +37,9 @@
                     <input type="text" class="formu" name=" cidade/bairro" id="bairro" placeholder="Cidade / Bairro"><br>
                     <select name="dropdown" class="formu" id="qualculto">
                         <option selected disabled>Em qual Culto Está?</option>
-                        <option>Sábado</option>
-                        <option>Domingo</option>
-                        <option>Quinta</option>
+                        <option>Sábado - Clan</option>
+                        <option>Domingo - Culto da Família</option>
+                        <option>Quinta - Culto da Resposta</option>
                     </select><br>
                     <select name="dropdown" class="formu" id="comoconheceu">
                         <option selected disabled>Como nos Conheceu?</option>
@@ -49,7 +49,8 @@
                         <option>Outros</option>
                     </select>
             </div>
-        </form>    
+        </form>  
+        <input type="button" value="Enviar" id="btnenviar" onclick="fecharpopup()">  
     </div>
     <div id="overlay" style="display: none;" onclick="fecharpopup()"></div>
 <script src="scriptigreja.js"></script>

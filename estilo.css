@@ -125,6 +125,27 @@ body{
     border: none;
     margin-top: 15px;
     margin-bottom: 15px;
-  
+    padding-left: 15px;
+    font: normal 12pt arial;
 }
 
+#btnenviar{
+    background: #00e676;
+    color: black;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+#btnenviar:hover{
+    transform: scale(1.03);
+    background-color: aliceblue;
+    transition: 0.5s;
+}
+#btnenviar:active{
+    transform: scale(0.98);
+}
