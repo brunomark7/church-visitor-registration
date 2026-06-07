@@ -32,9 +32,9 @@
         </div>
         <form id="formvisitante">
             <div class="corpo-popup">
-                    <input type="text" class="formu" id="inptnome" placeholder="Nome"><br>
+                    <input type="text" class="formu" id="nome" placeholder="Nome"><br>
                     <input type="tel" class="formu" name="telefone" id="telefone" placeholder="Telefone/Wpp com DDD" maxlength="11"><br>
-                    <input type="text" class="formu" name=" cidade/bairro" id="bairro" placeholder="Cidade / Bairro"><br>
+                    <input type="text" class="formu" name=" cidadebairro" id="bairro" placeholder="Cidade / Bairro"><br>
                     <select name="dropdown" class="formu" id="qualculto">
                         <option selected disabled>Em qual Culto Está?</option>
                         <option>Sábado - Clan</option>
@@ -50,9 +50,10 @@
                     </select>
             </div>
         </form>  
-        <input type="button" value="Enviar" id="btnenviar" onclick="fecharpopup()">  
+        <input type="button" value="Enviar" id="btnenviar" onclick="validacaodosdados()">  
+        <div id="mensagemErro"></div>
     </div>
-    <div id="overlay" style="display: none;" onclick="fecharpopup()"></div>
+    <div id="overlay" style="display: none;" onclick="fecharpopup()"></div><br>
 <script src="scriptigreja.js"></script>
 </div>
 </body>

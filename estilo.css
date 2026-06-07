@@ -135,6 +135,7 @@ body{
     border: none;
     padding: 10px 30px;
     margin-top: 10px;
+    margin-bottom: 8px;
     border-radius: 8px;
     font-size: 1.1rem;
     cursor: pointer;
@@ -148,4 +149,8 @@ body{
 }
 #btnenviar:active{
     transform: scale(0.98);
+}
+#mensagemErro {
+
+    font-style: italic;
 }
