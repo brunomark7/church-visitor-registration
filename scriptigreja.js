@@ -27,7 +27,7 @@ function validacaodosdados(){
     } else if( telefone.value.length !== 11){
         msg.innerText='Preencha o campo Telefone'
     } else{
-        alert('Tudo OK')
+        window.location.href='boasvindas.html'
     }
     
 }
