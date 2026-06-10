@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obrigado pela Visita | Luz da Vida</title>
-    <link rel="stylesheet" href="boasvindas.css"
+    <link rel="stylesheet" href="boasvindas.css">
 </head>
 <body>
 
@@ -12,7 +12,8 @@
 
         <img src="logo ldv.png" class="logo" alt="Logo Igreja Luz da Vida">
 
-        <h1>Muito obrigado pela sua visita!</h1>
+        <h1 id="tituloboasvindas">Muito obrigado pela sua visita!</h1>
+        <p id="nomebv"></p>
 
         <p>
             Estamos felizes em tê-lo conosco e esperamos que nossa igreja seja um
@@ -21,24 +22,24 @@
 
         <p>
             Acompanhe-nos nas redes sociais para ficar por dentro dos nossos
-            cultos, eventos e novidades.
+            cultos, eventos e novidades.Siga-nos e compartilhe com seus amigos para espalharmos a Palavra juntos.
         </p>
 
-        <p>
-            Siga-nos e compartilhe com seus amigos para espalharmos a Palavra juntos.
-        </p>
-
-        <p>
+        <p class="bencao">
             Que Deus abençoe sua vida e sua jornada!
         </p>
 
         <div class="redes-sociais">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">YouTube</a>
+            <a href="https://www.instagram.com/luzdavidafloripa/?igsh=MXcybnRpYWZ3c205Yw%3D%3D#" target="_blank"><img src="instagram.png" class="iconesredes"></a>
+            <a href="https://www.facebook.com/luzdavidafloripa/" target="_blank"><img src="facebook.png" class="iconesredes"></a>
+            <a href="https://youtube.com/@luzdavidafloripa5058?si=vLtRNfOCKgKqyEVI" target="_blank"><img src="youtube.png" class="iconesredes"></a>
         </div>
 
     </div>
-
+<script>
+    const nome= sessionStorage.getItem('nomeguardado')
+    const titulo= document.getElementById('tituloboasvindas')
+    titulo.innerText=` Muito Obrigado pela sua visita, ${nome}!`
+</script>
 </body>
 </html>

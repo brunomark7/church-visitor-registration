@@ -27,7 +27,9 @@ function validacaodosdados(){
     } else if( telefone.value.length !== 11){
         msg.innerText='Preencha o campo Telefone'
     } else{
+        sessionStorage.setItem('nomeguardado', nome.value)
         window.location.href='boasvindas.html'
+
     }
     
 }

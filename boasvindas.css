@@ -17,6 +17,19 @@ body{
     text-align: center;
 }
 
+
+.container p{
+    max-width: 450px;
+    margin: 0 auto 20px auto;
+    text-align: justify;
+    line-height: 1.7;
+}
+.container p.bencao{
+    text-align: center;
+    color: #ffffff;
+    font-style: italic;
+}
+
 .logo{
     width: 150px;
     height: auto;
@@ -44,4 +57,19 @@ p{
 .redes-sociais a{
     color: #00e676;
     text-decoration: none;
+}
+
+.iconesredes{
+    height: 40px;
+    width: 40px;
+}
+
+.iconesredes{
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.iconesredes:hover{
+    transform: scale(1.15);
 }
